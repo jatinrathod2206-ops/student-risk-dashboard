@@ -1,9 +1,19 @@
 import os
+from pathlib import Path
 import pandas as pd
 import numpy as np
 
-DATA_PATH = r'C:\Users\Baps\.gemini\antigravity-ide\scratch\student-risk-dashboard\data\student_data.xlsx'
+# Project root:
+# student-risk-dashboard/
+# ├── data/
+# │   └── student_data.xlsx
+# └── backend/
+#     └── app/
+#         └── services/
+#             └── data_service.py
 
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
+DATA_PATH = PROJECT_ROOT / "data" / "student_data.xlsx"
 class DataService:
     def __init__(self, data_path: str = DATA_PATH):
         self.data_path = data_path
