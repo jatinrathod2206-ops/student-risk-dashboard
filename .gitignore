@@ -37,3 +37,6 @@ yarn-error.log*
 
 # Model Large Artifacts
 *.pkl
+
+# Keep ML model artifacts required for deployment
+!backend/model/*.pkl
