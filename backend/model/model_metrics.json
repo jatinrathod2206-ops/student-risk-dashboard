@@ -1,0 +1,275 @@
+{
+  "selected_model": "Logistic Regression",
+  "target_classes": [
+    "High",
+    "Low",
+    "Medium"
+  ],
+  "comparison": {
+    "Logistic Regression": {
+      "accuracy": 0.93,
+      "precision_macro": 0.8833,
+      "recall_macro": 0.9635,
+      "f1_macro": 0.9156,
+      "high_risk_recall": 1.0,
+      "confusion_matrix": [
+        [
+          27,
+          0,
+          0
+        ],
+        [
+          0,
+          45,
+          0
+        ],
+        [
+          9,
+          5,
+          114
+        ]
+      ],
+      "classification_report": {
+        "High": {
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1-score": 0.8571428571428571,
+          "support": 27.0
+        },
+        "Low": {
+          "precision": 0.9,
+          "recall": 1.0,
+          "f1-score": 0.9473684210526315,
+          "support": 45.0
+        },
+        "Medium": {
+          "precision": 1.0,
+          "recall": 0.890625,
+          "f1-score": 0.9421487603305785,
+          "support": 128.0
+        },
+        "accuracy": 0.93,
+        "macro avg": {
+          "precision": 0.8833333333333333,
+          "recall": 0.9635416666666666,
+          "f1-score": 0.9155533461753557,
+          "support": 200.0
+        },
+        "weighted avg": {
+          "precision": 0.94375,
+          "recall": 0.93,
+          "f1-score": 0.931847387062698,
+          "support": 200.0
+        }
+      }
+    },
+    "Random Forest": {
+      "accuracy": 0.815,
+      "precision_macro": 0.787,
+      "recall_macro": 0.7438,
+      "f1_macro": 0.763,
+      "high_risk_recall": 0.6296,
+      "confusion_matrix": [
+        [
+          17,
+          0,
+          10
+        ],
+        [
+          0,
+          32,
+          13
+        ],
+        [
+          7,
+          7,
+          114
+        ]
+      ],
+      "classification_report": {
+        "High": {
+          "precision": 0.7083333333333334,
+          "recall": 0.6296296296296297,
+          "f1-score": 0.6666666666666666,
+          "support": 27.0
+        },
+        "Low": {
+          "precision": 0.8205128205128205,
+          "recall": 0.7111111111111111,
+          "f1-score": 0.7619047619047619,
+          "support": 45.0
+        },
+        "Medium": {
+          "precision": 0.8321167883211679,
+          "recall": 0.890625,
+          "f1-score": 0.8603773584905661,
+          "support": 128.0
+        },
+        "accuracy": 0.815,
+        "macro avg": {
+          "precision": 0.7869876473891072,
+          "recall": 0.7437885802469136,
+          "f1-score": 0.7629829290206649,
+          "support": 200.0
+        },
+        "weighted avg": {
+          "precision": 0.812795129140932,
+          "recall": 0.815,
+          "f1-score": 0.8120700808625336,
+          "support": 200.0
+        }
+      }
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.75,
+      "precision_macro": 0.769,
+      "recall_macro": 0.5888,
+      "f1_macro": 0.6347,
+      "high_risk_recall": 0.3333,
+      "confusion_matrix": [
+        [
+          9,
+          0,
+          18
+        ],
+        [
+          0,
+          23,
+          22
+        ],
+        [
+          2,
+          8,
+          118
+        ]
+      ],
+      "classification_report": {
+        "High": {
+          "precision": 0.8181818181818182,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.47368421052631576,
+          "support": 27.0
+        },
+        "Low": {
+          "precision": 0.7419354838709677,
+          "recall": 0.5111111111111111,
+          "f1-score": 0.6052631578947368,
+          "support": 45.0
+        },
+        "Medium": {
+          "precision": 0.7468354430379747,
+          "recall": 0.921875,
+          "f1-score": 0.8251748251748252,
+          "support": 128.0
+        },
+        "accuracy": 0.75,
+        "macro avg": {
+          "precision": 0.7689842483635868,
+          "recall": 0.5887731481481481,
+          "f1-score": 0.6347073978652926,
+          "support": 200.0
+        },
+        "weighted avg": {
+          "precision": 0.7553647128698171,
+          "recall": 0.75,
+          "f1-score": 0.7282434670592565,
+          "support": 200.0
+        }
+      }
+    }
+  },
+  "feature_importances": [
+    {
+      "feature": "Failed_Subjects",
+      "importance": 14.71
+    },
+    {
+      "feature": "Backlogs",
+      "importance": 13.04
+    },
+    {
+      "feature": "Attendance_Percent",
+      "importance": 11.49
+    },
+    {
+      "feature": "Assignment_Completion_Percent",
+      "importance": 10.47
+    },
+    {
+      "feature": "Average_Marks_Percent",
+      "importance": 9.64
+    },
+    {
+      "feature": "Study_Hours_Per_Day",
+      "importance": 8.77
+    },
+    {
+      "feature": "Late_Submissions",
+      "importance": 8.51
+    },
+    {
+      "feature": "Stress_Level",
+      "importance": 8.18
+    },
+    {
+      "feature": "Financial_Pressure_Level",
+      "importance": 6.66
+    },
+    {
+      "feature": "Class_Participation_Score",
+      "importance": 4.53
+    },
+    {
+      "feature": "Previous_GPA",
+      "importance": 0.78
+    },
+    {
+      "feature": "Absences_Last_30_Days",
+      "importance": 0.63
+    },
+    {
+      "feature": "Online_Learning_Hours_Per_Week",
+      "importance": 0.63
+    },
+    {
+      "feature": "Semester",
+      "importance": 0.49
+    },
+    {
+      "feature": "Internal_Marks_Percent",
+      "importance": 0.48
+    },
+    {
+      "feature": "Library_Visits_Per_Month",
+      "importance": 0.35
+    },
+    {
+      "feature": "Course_Encoded",
+      "importance": 0.34
+    },
+    {
+      "feature": "Age",
+      "importance": 0.29
+    }
+  ],
+  "feature_names": [
+    "Age",
+    "Semester",
+    "Attendance_Percent",
+    "Study_Hours_Per_Day",
+    "Assignment_Completion_Percent",
+    "Average_Marks_Percent",
+    "Previous_GPA",
+    "Failed_Subjects",
+    "Backlogs",
+    "Internal_Marks_Percent",
+    "Class_Participation_Score",
+    "Late_Submissions",
+    "Absences_Last_30_Days",
+    "Library_Visits_Per_Month",
+    "Online_Learning_Hours_Per_Week",
+    "Stress_Level",
+    "Financial_Pressure_Level",
+    "Course_Encoded"
+  ]
+}

@@ -1,0 +1,20 @@
+[
+  "Age",
+  "Semester",
+  "Attendance_Percent",
+  "Study_Hours_Per_Day",
+  "Assignment_Completion_Percent",
+  "Average_Marks_Percent",
+  "Previous_GPA",
+  "Failed_Subjects",
+  "Backlogs",
+  "Internal_Marks_Percent",
+  "Class_Participation_Score",
+  "Late_Submissions",
+  "Absences_Last_30_Days",
+  "Library_Visits_Per_Month",
+  "Online_Learning_Hours_Per_Week",
+  "Stress_Level",
+  "Financial_Pressure_Level",
+  "Course_Encoded"
+]
